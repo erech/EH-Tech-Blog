@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <!--css-->
+  <link rel="stylesheet" href="/public/css/style.css">
+
+</head>
+<body>
+    <!--login-->
+    <section class="container form">
+        <div class="form login" id="loginF">
+            <div class="form-content">
+                <header>Login</header>
+                <div id="err"></div>
+                <form action="#"">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input" id="email">
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="password" class="password" id="password">
+                    </div>
+                    <div class="field button-field">
+                        <button>Login</button>
+                    </div>
+                   
+                </form>
+                <div class="form-link">
+                        <span>Don't have an account? <a href="#" class="link signup-link">Sign up!</a></span>
+                    </div>
+            </div>
+
+            <!--sign up-->
+        </div>
+        <div class="form signup" id="signUpF">
+            <div class="form-content">
+                <header>Sign up</header>
+                <div id="signUpErr"></div>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input" id="emailSU">
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="password" class="password" id="passwordSU">
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="password" class="password" id="passwordSU2">
+                    </div>
+                    <div class="field button-field">
+                        <button>Sign up</button>
+                    </div>               
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <!--Javascript-->
+    <script src="/public/js/login.js"></script>
+</body>
+</html>
