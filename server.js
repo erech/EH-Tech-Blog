@@ -1,11 +1,12 @@
 
 //declare constants
 const express = require('express');
+const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const sequelize = require('./config/connection');
 const path = require('path');
-const helpers = require('./utils/helpers');
-const exphbs = require('express-handlebars');
+const helpers = require('./utils/helper.js');
+
 const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
@@ -16,6 +17,7 @@ const PORT = process.env.PORT || 3001;
 const hbs = exphbs.create({ helpers });
 const store = new SequelizeStore({ db: sequelize });
 
+//register hbs.engine with express app
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
