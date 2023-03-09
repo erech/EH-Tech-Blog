@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="#">
+
+    <!-- Highlight.js CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+
+    <!-- Prism.js CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>{{title}}</h1>
+            <div>{{{body}}}</div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2023 - Tech Blog</p>
+    </footer>
+
+    <!-- Highlight.js JavaScript -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+
+    <!-- Prism.js JavaScript -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+
+    <!-- Initialize Highlight.js and Prism.js -->
+    <script>
+        hljs.highlightAll();
+        Prism.highlightAll();
+    </script>
+
+</body>
+</html>
